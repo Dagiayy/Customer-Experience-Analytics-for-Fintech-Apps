@@ -1,14 +1,3 @@
-Your provided `README.md` is clear and well-structured, but it needs minor updates to align with the current state of the project, particularly to reflect the attempt to scrape **600 reviews per bank** (as per your latest request) and to ensure consistency with the challenge requirements. The updates will:
-- Clarify the target of 600 reviews per bank (1,800 total) while noting the original requirement of 400 reviews per bank.
-- Update the file structure to reflect the `scraper/main.py` path (based on your command `python -m scraper.main`).
-- Add a section on **Git Workflow** to document the use of the `task-1` branch and pull request process.
-- Enhance the **Challenges** section to address the shortfall in reviews (e.g., only 1,177 reviews collected previously).
-- Include a note about potential fallback datasets, as allowed by the challenge.
-- Maintain a professional tone and format suitable for the interim submission due 8:00 PM UTC, June 08, 2024.
-
-Below is the edited `README.md` content, tailored to your project’s context and the challenge requirements.
-
----
 
 # Customer-Experience-Analytics-for-Fintech-Apps
 
