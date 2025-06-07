@@ -155,7 +155,7 @@ for bank in banks:
         logger.warning(f"{bank} has fewer than 3 themes identified")
 
 # Prepare final output
-output_df = df[['review_id', 'review_text', 'sentiment_label', 'sentiment_score', 'identified_themes', 'bank']]
+output_df = df[['review_id', 'review_text', 'sentiment_label', 'sentiment_score', 'identified_themes', 'bank', 'date']]
 output_file = 'data/analyzed_reviews.csv'
 os.makedirs('data', exist_ok=True)
 output_df.to_csv(output_file, index=False, encoding='utf-8')
