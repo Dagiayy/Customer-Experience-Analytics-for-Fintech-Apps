@@ -1,4 +1,4 @@
-from google_play_scraper import reviews, Sort
+from google_play_scraper import reviews, Sort # type: ignore
 from .utils import normalize_date
 import time
 
