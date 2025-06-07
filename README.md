@@ -1,21 +1,17 @@
-## Task 3: Store Cleaned Data in Oracle
+## Task 4: Insights and Recommendations
 
 ### Methodology
-- **Objective**: Store the cleaned and processed review data in an Oracle database.
-- **Setup**:
-  - Installed Oracle Database Express Edition (XE) 21c.
-  - Created a user `bank_reviews` with schema `bank_reviews`.
-- **Schema**:
-  - `Banks` table: `bank_id` (primary key), `bank_name` (unique).
-  - `Reviews` table: `review_id` (primary key), `bank_id` (foreign key), `review_text`, `rating`, `review_date`, `source`, `sentiment_label`, `sentiment_score`, `identified_themes`.
-- **Data Insertion**:
-  - Used `oracledb` Python driver to connect to Oracle XE.
-  - Inserted 1,997 reviews from `data/analyzed_reviews.csv` into the `Reviews` table.
-- **Output**:
-  - Exported database schema and data as `data/bank_reviews_dump.sql` using Oracle SQL Developer.
-- **Data Quality**:
-  - Populated tables with 1,997 entries (exceeding the KPI of >1,000 entries).
+- **Objective**: Derive insights from sentiment and themes, visualize results, and recommend app improvements.
+- **Insights**:
+  - Identified drivers (e.g., UI for CBE, transactions for Dashen) and pain points (e.g., performance for BOA) using keyword analysis.
+  - Compared banks based on sentiment and themes.
+  - Suggested improvements (e.g., budgeting tool, performance optimization).
+- **Visualizations**:
+  - Sentiment trend by rating (bar plot).
+  - Rating distribution per bank (count plot).
+  - Word cloud of keywords per bank.
+- **Ethics**: Noted potential biases (e.g., negative skew) and privacy concerns.
+- **Output**: Saved as `scraper/visualize_task4.ipynb`.
 
 ### Files
-- `scraper/load_to_oracle.py`: Script to create tables and insert data into Oracle.
-- `bank_reviews_dump.sql`: SQL dump of the database.
+- `scraper/visualize_task4.ipynb`: Jupyter Notebook with insights and visualizations.
